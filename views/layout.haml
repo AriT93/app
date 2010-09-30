@@ -1,0 +1,17 @@
+!!!strict
+%html
+  %head
+    %title App
+    %link{:rel => 'stylesheet', :type => 'text/css', :href => '/css/style.css'}
+    %script{:type => 'text/javascript', :src => 'js/jquery.js'}
+  %body
+    #Header
+      .clear
+      #contentMast
+        %p
+          - flash[:notice] = "Welcome!"
+    #Body
+      #contentBody
+        = yield
+    #footer
+      @copy; testAppsRUs
