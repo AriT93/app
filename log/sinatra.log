@@ -307,3 +307,938 @@ NameError: undefined local variable or method `flash' for #<App:0x7e669940>
 127.0.0.1 - - [01/Oct/2010 07:42:55] "GET / HTTP/1.1" 200 1030 0.0310
 127.0.0.1 - - [01/Oct/2010 07:42:55] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
 127.0.0.1 - - [01/Oct/2010 07:42:55] "GET /css/style.css HTTP/1.1" 200 671 0.0930
+127.0.0.1 - - [01/Oct/2010 09:29:39] "GET / HTTP/1.1" 200 1074 0.0470
+Sass::SyntaxError - The line was indented 2 levels deeper than the previous line.:
+ ./views/style.sass:51
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:307:in `tree'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:208:in `_to_tree'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:196:in `_render'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:167:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:506:in `evaluate'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:316:in `sass'
+ ./app.rb:58:in `GET /css/style.css'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 09:29:39] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+Sass::SyntaxError: The line was indented 2 levels deeper than the previous line.
+	./views/style.sass:51
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:307:in `tree'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:208:in `_to_tree'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:196:in `_render'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:167:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:506:in `evaluate'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:316:in `sass'
+	./app.rb:58:in `GET /css/style.css'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 09:29:40] "GET /css/style.css HTTP/1.1" 500 149402 0.2500
+127.0.0.1 - - [01/Oct/2010 09:29:57] "GET / HTTP/1.1" 200 1074 0.0160
+127.0.0.1 - - [01/Oct/2010 09:29:57] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+Sass::SyntaxError - The line was indented 2 levels deeper than the previous line.:
+ ./views/style.sass:51
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:307:in `tree'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:208:in `_to_tree'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:196:in `_render'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:167:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:506:in `evaluate'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:316:in `sass'
+ ./app.rb:58:in `GET /css/style.css'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+Sass::SyntaxError: The line was indented 2 levels deeper than the previous line.
+	./views/style.sass:51
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:307:in `tree'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:208:in `_to_tree'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:196:in `_render'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/sass/engine.rb:167:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:506:in `evaluate'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:316:in `sass'
+	./app.rb:58:in `GET /css/style.css'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 09:29:58] "GET /css/style.css HTTP/1.1" 500 149562 0.2810
+127.0.0.1 - - [01/Oct/2010 09:30:37] "GET / HTTP/1.1" 200 1074 0.0310
+127.0.0.1 - - [01/Oct/2010 09:30:37] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:30:37] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:30:57] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 09:30:57] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:30:57] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:36:42] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:36:43] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:36:43] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:36:43] "GET /js/application.js HTTP/1.1" 200 167 0.0470
+127.0.0.1 - - [01/Oct/2010 09:39:04] "GET / HTTP/1.1" 200 1175 0.0630
+127.0.0.1 - - [01/Oct/2010 09:39:04] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:39:04] "GET /css/style.css HTTP/1.1" 200 825 0.0320
+127.0.0.1 - - [01/Oct/2010 09:39:04] "GET /js/application.js HTTP/1.1" 200 229 0.0150
+127.0.0.1 - - [01/Oct/2010 09:39:35] "GET / HTTP/1.1" 200 1175 0.0310
+127.0.0.1 - - [01/Oct/2010 09:39:35] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 09:39:35] "GET /css/style.css HTTP/1.1" 200 825 0.1090
+127.0.0.1 - - [01/Oct/2010 09:39:35] "GET /js/application.js HTTP/1.1" 200 230 0.0000
+127.0.0.1 - - [01/Oct/2010 09:39:52] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:39:52] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:39:52] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:39:52] "GET /js/application.js HTTP/1.1" 200 253 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:05] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:06] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:06] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:40:06] "GET /js/application.js HTTP/1.1" 200 248 0.0150
+127.0.0.1 - - [01/Oct/2010 09:40:11] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:11] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:11] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:40:11] "GET /js/application.js HTTP/1.1" 200 254 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:16] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:16] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:16] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:40:16] "GET /js/application.js HTTP/1.1" 200 253 0.0150
+127.0.0.1 - - [01/Oct/2010 09:40:22] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:22] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:22] "GET /css/style.css HTTP/1.1" 200 825 0.1720
+127.0.0.1 - - [01/Oct/2010 09:40:22] "GET /js/application.js HTTP/1.1" 200 258 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:32] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:40:32] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:33] "GET /css/style.css HTTP/1.1" 200 825 0.1090
+127.0.0.1 - - [01/Oct/2010 09:40:33] "GET /js/application.js HTTP/1.1" 200 252 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:40] "GET / HTTP/1.1" 200 1175 0.0320
+127.0.0.1 - - [01/Oct/2010 09:40:40] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:40:40] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:40:40] "GET /js/application.js HTTP/1.1" 200 253 0.0160
+127.0.0.1 - - [01/Oct/2010 09:41:06] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:41:06] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:06] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:41:06] "GET /js/application.js HTTP/1.1" 200 231 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:36] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:36] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:36] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:41:36] "GET /js/application.js HTTP/1.1" 200 90 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:49] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:41:49] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:49] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:41:49] "GET /js/application.js HTTP/1.1" 200 109 0.0160
+127.0.0.1 - - [01/Oct/2010 09:41:58] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:41:58] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:41:58] "GET /css/style.css HTTP/1.1" 200 825 0.1870
+127.0.0.1 - - [01/Oct/2010 09:41:58] "GET /js/application.js HTTP/1.1" 200 114 0.0000
+127.0.0.1 - - [01/Oct/2010 09:42:54] "GET / HTTP/1.1" 200 1175 0.0320
+127.0.0.1 - - [01/Oct/2010 09:42:54] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 09:42:54] "GET /css/style.css HTTP/1.1" 200 825 0.1100
+127.0.0.1 - - [01/Oct/2010 09:42:54] "GET /js/application.js HTTP/1.1" 200 104 0.0000
+127.0.0.1 - - [01/Oct/2010 09:43:15] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:43:15] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 09:43:15] "GET /css/style.css HTTP/1.1" 200 825 0.1090
+127.0.0.1 - - [01/Oct/2010 09:43:15] "GET /js/application.js HTTP/1.1" 200 118 0.0000
+127.0.0.1 - - [01/Oct/2010 09:43:26] "GET / HTTP/1.1" 200 1175 0.0310
+127.0.0.1 - - [01/Oct/2010 09:43:27] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:43:27] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:43:27] "GET /js/application.js HTTP/1.1" 200 117 0.0160
+127.0.0.1 - - [01/Oct/2010 09:43:41] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:43:41] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:43:41] "GET /css/style.css HTTP/1.1" 200 825 0.0930
+127.0.0.1 - - [01/Oct/2010 09:43:41] "GET /js/application.js HTTP/1.1" 200 109 0.0160
+127.0.0.1 - - [01/Oct/2010 09:44:20] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:44:20] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:44:20] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:44:20] "GET /js/application.js HTTP/1.1" 200 111 0.0000
+127.0.0.1 - - [01/Oct/2010 09:44:39] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:44:39] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:44:39] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:44:39] "GET /js/application.js HTTP/1.1" 200 88 0.0780
+127.0.0.1 - - [01/Oct/2010 09:44:43] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:44:43] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:44:43] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:44:43] "GET /js/application.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 09:45:00] "GET / HTTP/1.1" 200 1175 0.0310
+127.0.0.1 - - [01/Oct/2010 09:45:00] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:45:00] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:45:00] "GET /js/application.js HTTP/1.1" 200 91 0.0150
+127.0.0.1 - - [01/Oct/2010 09:45:02] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:45:02] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:45:02] "GET /css/style.css HTTP/1.1" 200 825 0.1250
+127.0.0.1 - - [01/Oct/2010 09:45:02] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 09:45:09] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:45:09] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:45:09] "GET /css/style.css HTTP/1.1" 200 825 0.0930
+127.0.0.1 - - [01/Oct/2010 09:45:09] "GET /js/application.js HTTP/1.1" 200 92 0.0000
+127.0.0.1 - - [01/Oct/2010 09:46:01] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:46:01] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:46:01] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:46:01] "GET /js/application.js HTTP/1.1" 200 141 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:19] "GET / HTTP/1.1" 200 1175 0.0310
+127.0.0.1 - - [01/Oct/2010 09:51:19] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:20] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:51:20] "GET /js/application.js HTTP/1.1" 200 176 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:33] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:33] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:33] "GET /css/style.css HTTP/1.1" 200 825 0.1250
+127.0.0.1 - - [01/Oct/2010 09:51:33] "GET /js/application.js HTTP/1.1" 200 175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:50] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:51:50] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:50] "GET /css/style.css HTTP/1.1" 200 825 0.0310
+127.0.0.1 - - [01/Oct/2010 09:51:50] "GET /js/application.js HTTP/1.1" 200 168 0.0160
+127.0.0.1 - - [01/Oct/2010 09:51:59] "GET / HTTP/1.1" 200 1175 0.0310
+127.0.0.1 - - [01/Oct/2010 09:51:59] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:51:59] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:51:59] "GET /js/application.js HTTP/1.1" 200 165 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:05] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:05] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:05] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:52:05] "GET /js/application.js HTTP/1.1" 200 168 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:15] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:52:15] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:15] "GET /css/style.css HTTP/1.1" 200 825 0.0460
+127.0.0.1 - - [01/Oct/2010 09:52:15] "GET /js/application.js HTTP/1.1" 200 168 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:26] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:26] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:26] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:52:26] "GET /js/application.js HTTP/1.1" 200 167 0.0150
+127.0.0.1 - - [01/Oct/2010 09:52:30] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:52:30] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:30] "GET /css/style.css HTTP/1.1" 200 825 0.1250
+127.0.0.1 - - [01/Oct/2010 09:52:30] "GET /js/application.js HTTP/1.1" 200 168 0.0160
+127.0.0.1 - - [01/Oct/2010 09:52:38] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:38] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:38] "GET /js/application.js HTTP/1.1" 200 120 0.0000
+127.0.0.1 - - [01/Oct/2010 09:52:38] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:53:02] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:53:02] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 09:53:02] "GET /css/style.css HTTP/1.1" 200 825 0.1090
+127.0.0.1 - - [01/Oct/2010 09:53:02] "GET /js/application.js HTTP/1.1" 200 132 0.0000
+127.0.0.1 - - [01/Oct/2010 09:54:56] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:54:56] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:54:56] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:54:56] "GET /js/application.js HTTP/1.1" 200 167 0.0160
+127.0.0.1 - - [01/Oct/2010 09:55:06] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:55:06] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:55:06] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:55:06] "GET /js/application.js HTTP/1.1" 200 167 0.0150
+127.0.0.1 - - [01/Oct/2010 09:55:13] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:55:13] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:55:13] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:55:13] "GET /js/application.js HTTP/1.1" 200 167 0.0000
+127.0.0.1 - - [01/Oct/2010 09:56:07] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:56:07] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:56:07] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:56:07] "GET /js/application.js HTTP/1.1" 200 164 0.0930
+127.0.0.1 - - [01/Oct/2010 09:56:15] "GET / HTTP/1.1" 200 1175 0.0310
+127.0.0.1 - - [01/Oct/2010 09:56:15] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:56:15] "GET /css/style.css HTTP/1.1" 200 825 0.0940
+127.0.0.1 - - [01/Oct/2010 09:56:15] "GET /js/application.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 09:56:30] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:56:30] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:56:30] "GET /css/style.css HTTP/1.1" 200 825 0.0930
+127.0.0.1 - - [01/Oct/2010 09:56:30] "GET /js/application.js HTTP/1.1" 200 164 0.0160
+127.0.0.1 - - [01/Oct/2010 09:56:59] "GET / HTTP/1.1" 200 1175 0.0160
+127.0.0.1 - - [01/Oct/2010 09:56:59] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 09:56:59] "GET /css/style.css HTTP/1.1" 200 825 0.1100
+127.0.0.1 - - [01/Oct/2010 09:56:59] "GET /js/application.js HTTP/1.1" 200 129 0.0000
+127.0.0.1 - - [01/Oct/2010 09:57:19] "GET / HTTP/1.1" 200 1175 0.3590
+127.0.0.1 - - [01/Oct/2010 09:57:19] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:57:19] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:57:19] "GET /js/application.js HTTP/1.1" 200 122 0.0160
+127.0.0.1 - - [01/Oct/2010 09:57:43] "GET / HTTP/1.1" 200 1175 0.0150
+127.0.0.1 - - [01/Oct/2010 09:57:43] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:57:43] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:57:43] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:57:48] "GET / HTTP/1.1" 200 1175 0.0000
+127.0.0.1 - - [01/Oct/2010 09:57:48] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:57:48] "GET /css/style.css HTTP/1.1" 200 825 0.0470
+127.0.0.1 - - [01/Oct/2010 09:57:48] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:58:31] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 09:58:31] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:58:31] "GET /css/style.css HTTP/1.1" 200 825 0.0620
+127.0.0.1 - - [01/Oct/2010 09:58:31] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:58:34] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 09:58:34] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 09:58:34] "GET /css/style.css HTTP/1.1" 200 825 0.0930
+127.0.0.1 - - [01/Oct/2010 09:58:34] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 09:59:49] "GET / HTTP/1.1" 200 1106 0.0320
+127.0.0.1 - - [01/Oct/2010 09:59:49] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 09:59:50] "GET /css/style.css HTTP/1.1" 200 841 0.2650
+127.0.0.1 - - [01/Oct/2010 09:59:50] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:01] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:00:01] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:01] "GET /css/style.css HTTP/1.1" 200 840 0.0930
+127.0.0.1 - - [01/Oct/2010 10:00:01] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:06] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:00:06] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:06] "GET /css/style.css HTTP/1.1" 200 843 0.0940
+127.0.0.1 - - [01/Oct/2010 10:00:06] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:00:11] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:00:11] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:00:11] "GET /css/style.css HTTP/1.1" 200 842 0.0930
+127.0.0.1 - - [01/Oct/2010 10:00:11] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:15] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:00:15] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:15] "GET /css/style.css HTTP/1.1" 200 841 0.1100
+127.0.0.1 - - [01/Oct/2010 10:00:15] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:19] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:00:19] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:19] "GET /css/style.css HTTP/1.1" 200 842 0.0940
+127.0.0.1 - - [01/Oct/2010 10:00:19] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:24] "GET / HTTP/1.1" 200 1106 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:24] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:24] "GET /css/style.css HTTP/1.1" 200 843 0.0470
+127.0.0.1 - - [01/Oct/2010 10:00:24] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:29] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:00:29] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:29] "GET /css/style.css HTTP/1.1" 200 843 0.1870
+127.0.0.1 - - [01/Oct/2010 10:00:29] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:00:35] "GET / HTTP/1.1" 200 1106 0.0310
+127.0.0.1 - - [01/Oct/2010 10:00:35] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:00:35] "GET /css/style.css HTTP/1.1" 200 844 0.1090
+127.0.0.1 - - [01/Oct/2010 10:00:35] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:06] "GET / HTTP/1.1" 200 1106 0.0320
+127.0.0.1 - - [01/Oct/2010 10:02:06] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:02:06] "GET /css/style.css HTTP/1.1" 200 858 0.1100
+127.0.0.1 - - [01/Oct/2010 10:02:06] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:20] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:02:20] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:20] "GET /css/style.css HTTP/1.1" 200 864 0.0930
+127.0.0.1 - - [01/Oct/2010 10:02:20] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:02:29] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:02:29] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:29] "GET /css/style.css HTTP/1.1" 200 864 0.0940
+127.0.0.1 - - [01/Oct/2010 10:02:29] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:02:33] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:02:33] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:34] "GET /css/style.css HTTP/1.1" 200 864 0.0940
+127.0.0.1 - - [01/Oct/2010 10:02:34] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:02:35] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:02:35] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:35] "GET /css/style.css HTTP/1.1" 200 864 0.1870
+127.0.0.1 - - [01/Oct/2010 10:02:35] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:39] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:02:39] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:39] "GET /css/style.css HTTP/1.1" 200 862 0.1090
+127.0.0.1 - - [01/Oct/2010 10:02:39] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:02:46] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:02:47] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:02:47] "GET /css/style.css HTTP/1.1" 200 860 0.0930
+127.0.0.1 - - [01/Oct/2010 10:02:47] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:03:00] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:03:00] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:03:00] "GET /css/style.css HTTP/1.1" 200 841 0.0940
+127.0.0.1 - - [01/Oct/2010 10:03:00] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:03:18] "GET / HTTP/1.1" 200 1106 0.0310
+127.0.0.1 - - [01/Oct/2010 10:03:18] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:03:18] "GET /css/style.css HTTP/1.1" 200 860 0.1090
+127.0.0.1 - - [01/Oct/2010 10:03:18] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:03:23] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:03:23] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:03:23] "GET /css/style.css HTTP/1.1" 200 864 0.0940
+127.0.0.1 - - [01/Oct/2010 10:03:23] "GET /js/application.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:03:28] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:03:28] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:03:29] "GET /css/style.css HTTP/1.1" 200 864 0.0940
+127.0.0.1 - - [01/Oct/2010 10:03:29] "GET /js/application.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:03:34] "GET / HTTP/1.1" 200 1106 0.1720
+127.0.0.1 - - [01/Oct/2010 10:03:34] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:03:34] "GET /css/style.css HTTP/1.1" 200 864 0.0470
+127.0.0.1 - - [01/Oct/2010 10:03:34] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:04:03] "GET / HTTP/1.1" 200 1106 0.0150
+127.0.0.1 - - [01/Oct/2010 10:04:03] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:04:03] "GET /css/style.css HTTP/1.1" 200 863 0.1100
+127.0.0.1 - - [01/Oct/2010 10:04:03] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:07:54] "GET / HTTP/1.1" 200 1106 0.0310
+127.0.0.1 - - [01/Oct/2010 10:07:54] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:07:54] "GET /css/style.css HTTP/1.1" 200 863 0.1100
+127.0.0.1 - - [01/Oct/2010 10:07:54] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:07:56] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:07:56] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:07:57] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 10:07:57] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:14:04] "GET / HTTP/1.1" 200 1175 3.7500
+127.0.0.1 - - [01/Oct/2010 10:14:04] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:14:04] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:14:04] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+Rack::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:14:30] "GET / HTTP/1.1" 200 1175 0.2190
+127.0.0.1 - - [01/Oct/2010 10:14:38] "GET /js/jquery.js HTTP/1.1" 304 - 7.4850
+127.0.0.1 - - [01/Oct/2010 10:14:38] "GET /css/style.css HTTP/1.1" 200 863 7.5320
+127.0.0.1 - - [01/Oct/2010 10:14:38] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:14:43] "GET / HTTP/1.1" 200 1175 0.0320
+127.0.0.1 - - [01/Oct/2010 10:14:43] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:14:43] "GET /css/style.css HTTP/1.1" 200 863 0.1100
+127.0.0.1 - - [01/Oct/2010 10:14:43] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:02] "GET / HTTP/1.1" 200 1175 3.8280
+127.0.0.1 - - [01/Oct/2010 10:21:03] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:21:03] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:21:03] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:21:33] "GET / HTTP/1.1" 200 1106 0.1100
+127.0.0.1 - - [01/Oct/2010 10:21:42] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:42] "GET /css/style.css HTTP/1.1" 200 863 8.9690
+127.0.0.1 - - [01/Oct/2010 10:21:42] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:44] "GET / HTTP/1.1" 200 1106 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:44] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:44] "GET /css/style.css HTTP/1.1" 200 863 0.0620
+127.0.0.1 - - [01/Oct/2010 10:21:44] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET / HTTP/1.1" 200 1106 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET / HTTP/1.1" 200 1106 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:21:46] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:21:52] "GET / HTTP/1.1" 200 1106 0.0470
+127.0.0.1 - - [01/Oct/2010 10:21:52] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:21:52] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:21:52] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:21:56] "GET / HTTP/1.1" 200 1106 0.0620
+127.0.0.1 - - [01/Oct/2010 10:21:56] "GET /css/style.css HTTP/1.1" 200 863 0.1410
+127.0.0.1 - - [01/Oct/2010 10:21:56] "GET /js/jquery.js HTTP/1.1" 200 163629 0.0310
+127.0.0.1 - - [01/Oct/2010 10:21:56] "GET /js/application.js HTTP/1.1" 200 122 0.0160
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:22:10] "GET / HTTP/1.1" 200 1106 0.2970
+127.0.0.1 - - [01/Oct/2010 10:22:25] "GET /js/jquery.js HTTP/1.1" 304 - 0.0310
+127.0.0.1 - - [01/Oct/2010 10:22:25] "GET /css/style.css HTTP/1.1" 200 863 15.2190
+127.0.0.1 - - [01/Oct/2010 10:22:25] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:24:26] "GET / HTTP/1.1" 200 1182 3.7660
+127.0.0.1 - - [01/Oct/2010 10:24:26] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:24:26] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:24:26] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:24:42] "GET / HTTP/1.1" 200 1182 0.2500
+127.0.0.1 - - [01/Oct/2010 10:24:42] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:24:42] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 10:24:50] "GET /js/application.js HTTP/1.1" 304 - 7.5630
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:25:09] "GET / HTTP/1.1" 200 1182 0.3280
+127.0.0.1 - - [01/Oct/2010 10:25:09] "GET /js/jquery.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:25:10] "GET /css/style.css HTTP/1.1" 200 863 0.0460
+127.0.0.1 - - [01/Oct/2010 10:25:25] "GET /js/application.js HTTP/1.1" 304 - 15.0470
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader: reloaded `/cygdrive/c/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:26:00] "GET / HTTP/1.1" 200 1182 0.5630
+127.0.0.1 - - [01/Oct/2010 10:26:15] "GET /js/jquery.js HTTP/1.1" 304 - 0.0470
+127.0.0.1 - - [01/Oct/2010 10:26:15] "GET /css/style.css HTTP/1.1" 200 863 15.2190
+127.0.0.1 - - [01/Oct/2010 10:26:15] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:26:59] "GET / HTTP/1.1" 200 1182 0.0470
+127.0.0.1 - - [01/Oct/2010 10:26:59] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:26:59] "GET /css/style.css HTTP/1.1" 200 863 0.0930
+127.0.0.1 - - [01/Oct/2010 10:26:59] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:27:19] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:27:19] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:27:19] "GET /css/style.css HTTP/1.1" 200 863 0.0620
+127.0.0.1 - - [01/Oct/2010 10:27:19] "GET /js/application.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:27:20] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:27:20] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:27:21] "GET /css/style.css HTTP/1.1" 200 863 0.1720
+127.0.0.1 - - [01/Oct/2010 10:27:21] "GET /js/application.js HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 10:27:25] "GET / HTTP/1.1" 200 1106 0.0160
+127.0.0.1 - - [01/Oct/2010 10:27:25] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:27:25] "GET /css/style.css HTTP/1.1" 200 863 0.1090
+127.0.0.1 - - [01/Oct/2010 10:27:25] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:28:02] "GET / HTTP/1.1" 200 1106 0.0310
+127.0.0.1 - - [01/Oct/2010 10:28:02] "GET /js/jquery.js HTTP/1.1" 304 - 0.0160
+127.0.0.1 - - [01/Oct/2010 10:28:02] "GET /css/style.css HTTP/1.1" 200 863 0.1090
+127.0.0.1 - - [01/Oct/2010 10:28:02] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:28:22] "GET / HTTP/1.1" 200 1182 2.9375
+127.0.0.1 - - [01/Oct/2010 10:28:22] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:28:22] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:28:22] "GET /css/style.css HTTP/1.1" 200 863 0.0625
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:28:55] "GET / HTTP/1.1" 200 1182 0.1563
+127.0.0.1 - - [01/Oct/2010 10:29:09] "GET /js/jquery.js HTTP/1.1" 304 - 13.7189
+127.0.0.1 - - [01/Oct/2010 10:29:09] "GET /js/application.js HTTP/1.1" 304 - 13.7189
+127.0.0.1 - - [01/Oct/2010 10:29:09] "GET /css/style.css HTTP/1.1" 200 863 13.7814
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader  not reset sadface}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:31:57] "GET / HTTP/1.1" 200 1182 0.1094
+127.0.0.1 - - [01/Oct/2010 10:32:23] "GET /js/jquery.js HTTP/1.1" 304 - 26.2035
+127.0.0.1 - - [01/Oct/2010 10:32:23] "GET /js/application.js HTTP/1.1" 304 - 26.2035
+127.0.0.1 - - [01/Oct/2010 10:32:23] "GET /css/style.css HTTP/1.1" 200 863 26.2660
+Sinatra::Reloader  not reset sadface}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+NameError: uninitialized constant Sinatra::Apllication
+	C:/Dev/test/kataweb/app/app.rb:12:in `safe_load'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:50:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:78:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `map'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:48:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `exclusive'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:44:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	C:/Ruby/bin/rackup:19:in `load'
+	C:/Ruby/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 10:33:03] "GET / HTTP/1.1" 500 111760 0.2813
+127.0.0.1 - - [01/Oct/2010 10:33:03] "GET /__sinatra__/500.png HTTP/1.1" 200 31056 0.0938
+127.0.0.1 - - [01/Oct/2010 10:33:38] "GET / HTTP/1.1" 200 1182 10.8594
+127.0.0.1 - - [01/Oct/2010 10:33:38] "GET /js/jquery.js HTTP/1.1" 304 - 0.0781
+127.0.0.1 - - [01/Oct/2010 10:33:38] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:33:38] "GET /css/style.css HTTP/1.1" 200 863 0.1094
+NameError: uninitialized constant Sinatra::Apllication
+	C:/Dev/test/kataweb/app/app.rb:12:in `safe_load'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:50:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:78:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `map'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:48:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `exclusive'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	C:/Ruby/bin/rackup:19:in `load'
+	C:/Ruby/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 10:33:48] "GET / HTTP/1.1" 500 104646 0.2344
+NameError: uninitialized constant Sinatra::Apllication
+	C:/Dev/test/kataweb/app/app.rb:12:in `safe_load'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:50:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:78:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `map'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:48:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `exclusive'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	C:/Ruby/bin/rackup:19:in `load'
+	C:/Ruby/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 10:33:48] "GET /__sinatra__/500.png HTTP/1.1" 500 105006 0.2344
+127.0.0.1 - - [01/Oct/2010 10:34:51] "GET / HTTP/1.1" 200 1182 2.9063
+127.0.0.1 - - [01/Oct/2010 10:34:51] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:34:51] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:34:51] "GET /css/style.css HTTP/1.1" 200 863 0.0781
+127.0.0.1 - - [01/Oct/2010 10:34:59] "GET / HTTP/1.1" 200 1182 0.0469
+127.0.0.1 - - [01/Oct/2010 10:34:59] "GET /js/jquery.js HTTP/1.1" 304 - 0.0313
+127.0.0.1 - - [01/Oct/2010 10:34:59] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:34:59] "GET /css/style.css HTTP/1.1" 200 863 0.1719
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./environment.rb}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:35:04] "GET / HTTP/1.1" 200 1182 0.1406
+127.0.0.1 - - [01/Oct/2010 10:35:18] "GET /js/jquery.js HTTP/1.1" 304 - 14.3595
+127.0.0.1 - - [01/Oct/2010 10:35:18] "GET /js/application.js HTTP/1.1" 304 - 14.3595
+127.0.0.1 - - [01/Oct/2010 10:35:18] "GET /css/style.css HTTP/1.1" 200 863 14.3907
+127.0.0.1 - - [01/Oct/2010 10:37:14] "GET / HTTP/1.1" 200 1182 3.0625
+127.0.0.1 - - [01/Oct/2010 10:37:14] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:37:14] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:37:14] "GET /css/style.css HTTP/1.1" 200 863 0.0469
+127.0.0.1 - - [01/Oct/2010 10:37:29] "GET / HTTP/1.1" 200 1106 0.1406
+127.0.0.1 - - [01/Oct/2010 10:37:29] "GET /js/jquery.js HTTP/1.1" 304 - 0.0469
+127.0.0.1 - - [01/Oct/2010 10:37:29] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:29] "GET /css/style.css HTTP/1.1" 200 863 0.1875
+127.0.0.1 - - [01/Oct/2010 10:37:31] "GET / HTTP/1.1" 200 1106 0.0313
+127.0.0.1 - - [01/Oct/2010 10:37:31] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:31] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:31] "GET /css/style.css HTTP/1.1" 200 863 0.1094
+127.0.0.1 - - [01/Oct/2010 10:37:36] "GET / HTTP/1.1" 200 1106 0.0313
+127.0.0.1 - - [01/Oct/2010 10:37:36] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:36] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:36] "GET /css/style.css HTTP/1.1" 200 863 0.1094
+127.0.0.1 - - [01/Oct/2010 10:37:38] "GET / HTTP/1.1" 200 1106 0.0313
+127.0.0.1 - - [01/Oct/2010 10:37:38] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:38] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:37:38] "GET /css/style.css HTTP/1.1" 200 863 0.1250
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./app.rb}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:37:41] "GET / HTTP/1.1" 200 1106 0.1406
+127.0.0.1 - - [01/Oct/2010 10:37:55] "GET /js/jquery.js HTTP/1.1" 304 - 14.3438
+127.0.0.1 - - [01/Oct/2010 10:37:55] "GET /js/application.js HTTP/1.1" 304 - 14.3438
+127.0.0.1 - - [01/Oct/2010 10:37:55] "GET /css/style.css HTTP/1.1" 200 863 14.4063
+127.0.0.1 - - [01/Oct/2010 10:38:00] "GET / HTTP/1.1" 200 1106 0.0313
+127.0.0.1 - - [01/Oct/2010 10:38:00] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:38:00] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:38:00] "GET /css/style.css HTTP/1.1" 200 863 0.1406
+127.0.0.1 - - [01/Oct/2010 10:41:46] "GET / HTTP/1.1" 200 1182 0.0156
+127.0.0.1 - - [01/Oct/2010 10:41:49] "GET /js/jquery.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:41:49] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:41:49] "GET /css/style.css HTTP/1.1" 200 863 3.4844
+NoMethodError: undefined method `basename' for "C:/Dev/test/kataweb/app/app.rb":String
+	./app.rb:8:in `safe_load'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:50:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:78:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `map'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:48:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `exclusive'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	C:/Ruby/bin/rackup:19:in `load'
+	C:/Ruby/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 10:42:04] "GET / HTTP/1.1" 500 104517 0.5313
+NoMethodError: undefined method `basename' for "C:/Dev/test/kataweb/app/app.rb":String
+	./app.rb:8:in `safe_load'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:50:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:78:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `map'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:70:in `rotation'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:48:in `reload!'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `exclusive'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/reloader.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:159:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `each'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:158:in `process_client'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:285:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `initialize'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `new'
+	C:/Ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.5-x86-mingw32/lib/mongrel.rb:268:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	C:/Ruby/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	C:/Ruby/bin/rackup:19:in `load'
+	C:/Ruby/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 10:42:05] "GET /__sinatra__/500.png HTTP/1.1" 500 104589 0.3438
+127.0.0.1 - - [01/Oct/2010 10:43:15] "GET / HTTP/1.1" 200 1106 0.0156
+127.0.0.1 - - [01/Oct/2010 10:43:18] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:43:18] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:43:18] "GET /css/style.css HTTP/1.1" 200 863 3.1563
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./environment.rb}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:43:48] "GET / HTTP/1.1" 200 1106 0.1875
+127.0.0.1 - - [01/Oct/2010 10:44:02] "GET /js/jquery.js HTTP/1.1" 304 - 14.1563
+127.0.0.1 - - [01/Oct/2010 10:44:02] "GET /js/application.js HTTP/1.1" 304 - 14.1407
+127.0.0.1 - - [01/Oct/2010 10:44:02] "GET /css/style.css HTTP/1.1" 200 863 14.2188
+127.0.0.1 - - [01/Oct/2010 10:44:50] "GET / HTTP/1.1" 200 1182 2.9844
+127.0.0.1 - - [01/Oct/2010 10:44:50] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:44:50] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:44:50] "GET /css/style.css HTTP/1.1" 200 863 0.0625
+Sinatra::Reloader: resetting routes
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:45:05] "GET / HTTP/1.1" 200 1182 0.1875
+127.0.0.1 - - [01/Oct/2010 10:45:20] "GET /js/jquery.js HTTP/1.1" 304 - 14.9688
+127.0.0.1 - - [01/Oct/2010 10:45:20] "GET /js/application.js HTTP/1.1" 304 - 14.9688
+127.0.0.1 - - [01/Oct/2010 10:45:20] "GET /css/style.css HTTP/1.1" 200 863 15.0626
+127.0.0.1 - - [01/Oct/2010 10:45:23] "GET / HTTP/1.1" 200 1182 0.0313
+127.0.0.1 - - [01/Oct/2010 10:45:23] "GET /js/jquery.js HTTP/1.1" 304 - 0.0313
+127.0.0.1 - - [01/Oct/2010 10:45:23] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:45:23] "GET /css/style.css HTTP/1.1" 200 863 0.1250
+127.0.0.1 - - [01/Oct/2010 10:45:24] "GET / HTTP/1.1" 200 1182 0.0313
+127.0.0.1 - - [01/Oct/2010 10:45:24] "GET /js/jquery.js HTTP/1.1" 304 - 0.0313
+127.0.0.1 - - [01/Oct/2010 10:45:24] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:45:24] "GET /css/style.css HTTP/1.1" 200 863 0.1250
+127.0.0.1 - - [01/Oct/2010 10:45:43] "GET / HTTP/1.1" 200 1182 0.1406
+127.0.0.1 - - [01/Oct/2010 10:45:43] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 10:45:43] "GET /js/application.js HTTP/1.1" 304 - 0.0156
+127.0.0.1 - - [01/Oct/2010 10:45:43] "GET /css/style.css HTTP/1.1" 200 863 0.0469
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./app.rb}
+C:/Dev/test/kataweb/app/environment.rb:17: warning: already initialized constant SiteConfig
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/environment.rb'
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./app.rb}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./app.rb}
+C:/Dev/test/kataweb/app/environment.rb:17: warning: already initialized constant SiteConfig
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/environment.rb'
+Sinatra::Reloader  not reset sadface C:/Dev/test/kataweb/app/app.rb and ./app.rb}
+Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
+127.0.0.1 - - [01/Oct/2010 10:45:58] "GET / HTTP/1.1" 200 1182 0.3438
+127.0.0.1 - - [01/Oct/2010 10:46:12] "GET /js/jquery.js HTTP/1.1" 304 - 13.6720
+127.0.0.1 - - [01/Oct/2010 10:46:12] "GET /js/application.js HTTP/1.1" 304 - 13.6720
+127.0.0.1 - - [01/Oct/2010 10:46:12] "GET /css/style.css HTTP/1.1" 200 863 13.7188

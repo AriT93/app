@@ -8,6 +8,7 @@ require 'haml'
 require 'sass'
 require 'pp'
 require 'rack-flash'
+require 'rack/reloader'
 require 'ostruct'
 require 'sinatra' unless defined?(Sinatra)
 

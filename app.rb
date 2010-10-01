@@ -6,10 +6,11 @@ require 'environment'
 
 class App < Sinatra::Base
   use Rack::Session::Cookie, :secret => 'secret key goes here'
-  use Rack::Flash
+  use Rack::Flash, :sweep => true
 
   set :app_file, __FILE__
   set :root, File.dirname(__FILE__)
+
 
   error do
     e = request.env['sinatra.error']
@@ -33,13 +34,6 @@ class App < Sinatra::Base
         haml "_#{name}".to_sym, options.merge(:layout => false)
       end
     end
-    def fb2hd
-      if fb[:user]
-        @email = DmUser.first(:fb_uid => fb[:user].to_s)
-        @user = AbUser.first(:email => @email.email)
-      end
-    end
-
   end
 
 
@@ -49,6 +43,7 @@ class App < Sinatra::Base
 
 
   get '/' do
+    flash[:notice] = "Welcome! Friend"
     haml :index
   end
 
