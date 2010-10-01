@@ -1242,3 +1242,722 @@ Sinatra::Reloader: reloaded `C:/Dev/test/kataweb/app/app.rb'
 127.0.0.1 - - [01/Oct/2010 10:46:12] "GET /js/jquery.js HTTP/1.1" 304 - 13.6720
 127.0.0.1 - - [01/Oct/2010 10:46:12] "GET /js/application.js HTTP/1.1" 304 - 13.6720
 127.0.0.1 - - [01/Oct/2010 10:46:12] "GET /css/style.css HTTP/1.1" 200 863 13.7188
+Haml::SyntaxError - You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block:
+ ./views/index.haml:5
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/haml/precompiler.rb:229:in `process_line'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/haml/precompiler.rb:178:in `precompile'
+ /usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/haml/engine.rb:121:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:444:in `new'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:444:in `prepare'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:124:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:370:in `new'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:370:in `compile_template'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:327:in `fetch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:358:in `compile_template'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:342:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+ ./app.rb:47:in `GET /'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+Haml::SyntaxError: You don't need to use "- end" in Haml. Un-indent to close a block:
+- if foo?
+  %strong Foo!
+- else
+  Not foo.
+%p This line is un-indented, so it isn't part of the "if" block
+	./views/index.haml:5
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/haml/precompiler.rb:229:in `process_line'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/haml/precompiler.rb:178:in `precompile'
+	/usr/lib/ruby/gems/1.8/gems/haml-3.0.15/lib/haml/engine.rb:121:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:444:in `new'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:444:in `prepare'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:124:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:370:in `new'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:370:in `compile_template'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:327:in `fetch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:358:in `compile_template'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:342:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+	./app.rb:47:in `GET /'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 14:05:45] "GET / HTTP/1.1" 500 160237 0.2500
+127.0.0.1 - - [01/Oct/2010 14:05:45] "GET /__sinatra__/500.png HTTP/1.1" 200 31056 0.0160
+127.0.0.1 - - [01/Oct/2010 14:05:57] "GET / HTTP/1.1" 200 1182 0.0620
+127.0.0.1 - - [01/Oct/2010 14:05:58] "GET /css/style.css HTTP/1.1" 200 863 0.1250
+127.0.0.1 - - [01/Oct/2010 14:05:58] "GET /js/jquery.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 14:05:58] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 14:06:13] "GET /ao/create HTTP/1.1" 404 418 0.0160
+127.0.0.1 - - [01/Oct/2010 14:06:13] "GET /__sinatra__/404.png HTTP/1.1" 200 23305 0.0000
+127.0.0.1 - - [01/Oct/2010 14:06:51] "GET /ao/create HTTP/1.1" 404 418 0.0160
+127.0.0.1 - - [01/Oct/2010 14:06:51] "GET /__sinatra__/404.png HTTP/1.1" 304 - 0.0160
+SyntaxError - compile error
+./views/ao_create.haml:8: syntax error, unexpected ':', expecting ')'
+... "submit", :name => "submit" :value => "submit");_hamlout.pu...
+                              ^
+./views/ao_create.haml:8: syntax error, unexpected ')', expecting kEND
+...> "submit" :value => "submit");_hamlout.push_text("</form>\n...
+                              ^:
+ ./views/ao_create.haml:14:in `compile_template_method'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:194:in `evaluate'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+ ./app.rb:61:in `GET /ao/create'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+SyntaxError: compile error
+./views/ao_create.haml:8: syntax error, unexpected ':', expecting ')'
+... "submit", :name => "submit" :value => "submit");_hamlout.pu...
+                              ^
+./views/ao_create.haml:8: syntax error, unexpected ')', expecting kEND
+...> "submit" :value => "submit");_hamlout.push_text("</form>\n...
+                              ^
+	./views/ao_create.haml:14:in `compile_template_method'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:194:in `evaluate'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+	./app.rb:61:in `GET /ao/create'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 14:07:10] "GET /ao/create HTTP/1.1" 500 141428 0.2340
+127.0.0.1 - - [01/Oct/2010 14:07:10] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 14:07:57] "GET /ao/create HTTP/1.1" 200 1100 0.0320
+127.0.0.1 - - [01/Oct/2010 14:07:57] "GET /ao/js/jquery.js HTTP/1.1" 404 424 0.0160
+127.0.0.1 - - [01/Oct/2010 14:07:57] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:07:57] "GET /ao/js/application.js HTTP/1.1" 404 429 0.0150
+127.0.0.1 - - [01/Oct/2010 14:08:05] "POST /ao/create HTTP/1.1" 302 - 0.1100
+127.0.0.1 - - [01/Oct/2010 14:08:05] "GET /ao/show/ HTTP/1.1" 404 417 0.0150
+127.0.0.1 - - [01/Oct/2010 14:08:36] "GET /ao/show/1 HTTP/1.1" 200 788 0.0630
+127.0.0.1 - - [01/Oct/2010 14:08:36] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:08:36] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:08:36] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+SyntaxError - compile error
+./views/ao_edit.haml:9: syntax error, unexpected ':', expecting ')'
+... "submit", :name => "submit" :value => "submit");_hamlout.pu...
+                              ^
+./views/ao_edit.haml:9: syntax error, unexpected ')', expecting kEND
+...> "submit" :value => "submit");_hamlout.push_text("</form>\n...
+                              ^:
+ ./views/ao_edit.haml:15:in `compile_template_method'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:194:in `evaluate'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+ ./app.rb:75:in `GET /ao/edit/:id'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+SyntaxError: compile error
+./views/ao_edit.haml:9: syntax error, unexpected ':', expecting ')'
+... "submit", :name => "submit" :value => "submit");_hamlout.pu...
+                              ^
+./views/ao_edit.haml:9: syntax error, unexpected ')', expecting kEND
+...> "submit" :value => "submit");_hamlout.push_text("</form>\n...
+                              ^
+	./views/ao_edit.haml:15:in `compile_template_method'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:194:in `evaluate'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+	./app.rb:75:in `GET /ao/edit/:id'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 14:08:42] "GET /ao/edit/1 HTTP/1.1" 500 141510 0.2340
+127.0.0.1 - - [01/Oct/2010 14:08:58] "GET /ao/edit/1 HTTP/1.1" 200 1192 0.0310
+127.0.0.1 - - [01/Oct/2010 14:08:58] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:08:58] "GET /css/style.css HTTP/1.1" 200 863 0.1100
+127.0.0.1 - - [01/Oct/2010 14:08:58] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0150
+127.0.0.1 - - [01/Oct/2010 14:08:58] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0160
+127.0.0.1 - - [01/Oct/2010 14:10:06] "GET /ao/edit/1?name=bob&value=jones&value=5&id=1&submit=submit HTTP/1.1" 200 1192 0.0320
+127.0.0.1 - - [01/Oct/2010 14:10:06] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0160
+127.0.0.1 - - [01/Oct/2010 14:10:06] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:10:06] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:10:06] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:10:35] "GET /ao/edit/1?name=bob&value=jones&value=5&id=1&submit=submit HTTP/1.1" 200 1194 0.0160
+127.0.0.1 - - [01/Oct/2010 14:10:36] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0160
+127.0.0.1 - - [01/Oct/2010 14:10:36] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:10:36] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:10:41] "GET /ao/edit/1?name=bob&value=jones&numeral=5&id=1&submit=submit HTTP/1.1" 200 1194 0.0310
+127.0.0.1 - - [01/Oct/2010 14:10:41] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0160
+127.0.0.1 - - [01/Oct/2010 14:10:41] "GET /css/style.css HTTP/1.1" 200 863 0.1720
+127.0.0.1 - - [01/Oct/2010 14:10:41] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:08] "GET /ao/show/1 HTTP/1.1" 200 788 0.0310
+127.0.0.1 - - [01/Oct/2010 14:11:08] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0150
+127.0.0.1 - - [01/Oct/2010 14:11:08] "GET /css/style.css HTTP/1.1" 200 863 0.0620
+127.0.0.1 - - [01/Oct/2010 14:11:08] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:08] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:10] "GET /ao/show/1 HTTP/1.1" 200 788 0.0310
+127.0.0.1 - - [01/Oct/2010 14:11:10] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:10] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:11:10] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:10] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:21] "GET / HTTP/1.1" 200 1219 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:21] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:11:24] "GET /ao/show/1 HTTP/1.1" 200 788 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:24] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:24] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:11:24] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:25] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:38] "GET /ao/edit/1 HTTP/1.1" 200 1194 0.0150
+127.0.0.1 - - [01/Oct/2010 14:11:38] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:38] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:11:38] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:38] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:44] "GET /ao/edit/1?name=bob&value=jones&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:44] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:44] "GET /css/style.css HTTP/1.1" 200 863 0.1560
+127.0.0.1 - - [01/Oct/2010 14:11:44] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:44] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:52] "GET /ao/edit/1?name=bob&value=5&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:52] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:52] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:11:52] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/1?name=bob&value=5&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0150
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/1?name=bob&value=5&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0160
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /css/style.css HTTP/1.1" 200 863 0.0470
+127.0.0.1 - - [01/Oct/2010 14:11:53] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:12:10] "GET /ao/edit/1?name=bob&value=5&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0320
+127.0.0.1 - - [01/Oct/2010 14:12:10] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:12:10] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:12:10] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0150
+127.0.0.1 - - [01/Oct/2010 14:12:10] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:12:15] "GET /ao/edit/1?name=bob&value=5&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0310
+127.0.0.1 - - [01/Oct/2010 14:12:15] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0160
+127.0.0.1 - - [01/Oct/2010 14:12:15] "GET /css/style.css HTTP/1.1" 200 863 0.1720
+127.0.0.1 - - [01/Oct/2010 14:12:15] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0160
+127.0.0.1 - - [01/Oct/2010 14:12:15] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0150
+127.0.0.1 - - [01/Oct/2010 14:12:20] "GET /ao/edit/1?name=bob&value=Jones&numeral=&id=1&submit=submit HTTP/1.1" 200 1194 0.0320
+127.0.0.1 - - [01/Oct/2010 14:12:20] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0150
+127.0.0.1 - - [01/Oct/2010 14:12:20] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:12:20] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:12:20] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:19:51] "GET /ao/edit/1?name=bob&value=Jones&numeral=&id=1&submit=submit HTTP/1.1" 200 1269 0.0310
+127.0.0.1 - - [01/Oct/2010 14:19:51] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:19:51] "GET /css/style.css HTTP/1.1" 200 863 0.1090
+127.0.0.1 - - [01/Oct/2010 14:19:51] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:19:55] "POST /ao/edit/1 HTTP/1.1" 404 419 0.0000
+127.0.0.1 - - [01/Oct/2010 14:25:37] "GET /ao/edit/1?name=bob&value=Jones&numeral=&id=1&submit=submit HTTP/1.1" 200 1256 0.0630
+127.0.0.1 - - [01/Oct/2010 14:25:37] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:25:37] "GET /css/style.css HTTP/1.1" 200 863 0.0790
+127.0.0.1 - - [01/Oct/2010 14:25:37] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0150
+127.0.0.1 - - [01/Oct/2010 14:25:37] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0000
+DataMapper::UpdateConflictError - AppObject#update cannot be called on a dirty resource:
+ /usr/lib/ruby/gems/1.8/gems/dm-core-1.0.0/lib/dm-core/resource.rb:1172:in `assert_update_clean_only'
+ /usr/lib/ruby/gems/1.8/gems/dm-core-1.0.0/lib/dm-core/resource.rb:389:in `update'
+ /usr/lib/ruby/gems/1.8/gems/dm-validations-1.0.0/lib/dm-validations.rb:102:in `update'
+ /usr/lib/ruby/gems/1.8/gems/dm-validations-1.0.0/lib/dm-validations/support/context.rb:30:in `validation_context'
+ /usr/lib/ruby/gems/1.8/gems/dm-validations-1.0.0/lib/dm-validations.rb:102:in `update'
+ ./app.rb:85:in `PUT /ao/edit/:id'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+DataMapper::UpdateConflictError: AppObject#update cannot be called on a dirty resource
+	/usr/lib/ruby/gems/1.8/gems/dm-core-1.0.0/lib/dm-core/resource.rb:1172:in `assert_update_clean_only'
+	/usr/lib/ruby/gems/1.8/gems/dm-core-1.0.0/lib/dm-core/resource.rb:389:in `update'
+	/usr/lib/ruby/gems/1.8/gems/dm-validations-1.0.0/lib/dm-validations.rb:102:in `update'
+	/usr/lib/ruby/gems/1.8/gems/dm-validations-1.0.0/lib/dm-validations/support/context.rb:30:in `validation_context'
+	/usr/lib/ruby/gems/1.8/gems/dm-validations-1.0.0/lib/dm-validations.rb:102:in `update'
+	./app.rb:85:in `PUT /ao/edit/:id'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 14:26:17] "PUT /ao/edit/1 HTTP/1.1" 500 145798 0.2180
+TypeError - can't convert Fixnum into String:
+ ./app.rb:86:in `+'
+ ./app.rb:86:in `PUT /ao/edit/:id'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+TypeError: can't convert Fixnum into String
+	./app.rb:86:in `+'
+	./app.rb:86:in `PUT /ao/edit/:id'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/usr/lib/ruby/gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/usr/lib/ruby/gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+127.0.0.1 - - [01/Oct/2010 14:31:03] "PUT /ao/edit/1 HTTP/1.1" 500 135808 0.4060
+127.0.0.1 - - [01/Oct/2010 14:31:03] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0150
+127.0.0.1 - - [01/Oct/2010 14:33:17] "PUT /ao/edit/1 HTTP/1.1" 302 - 0.1720
+127.0.0.1 - - [01/Oct/2010 14:33:17] "GET /ao/show/1 HTTP/1.1" 200 793 0.0310
+127.0.0.1 - - [01/Oct/2010 14:33:17] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0150
+127.0.0.1 - - [01/Oct/2010 14:33:17] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:33:17] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:33:17] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:33:29] "GET / HTTP/1.1" 200 1219 0.0160
+127.0.0.1 - - [01/Oct/2010 14:33:30] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:33:30] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 14:35:07] "GET / HTTP/1.1" 200 1219 0.0310
+127.0.0.1 - - [01/Oct/2010 14:35:07] "GET /js/jquery.js HTTP/1.1" 304 - 0.1400
+127.0.0.1 - - [01/Oct/2010 14:35:07] "GET /css/style.css HTTP/1.1" 200 863 0.1720
+127.0.0.1 - - [01/Oct/2010 14:35:07] "GET /js/application.js HTTP/1.1" 304 - 0.0000
+127.0.0.1 - - [01/Oct/2010 14:35:11] "GET /ao/show/1 HTTP/1.1" 200 822 0.0310
+127.0.0.1 - - [01/Oct/2010 14:35:11] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0160
+127.0.0.1 - - [01/Oct/2010 14:35:11] "GET /css/style.css HTTP/1.1" 200 863 0.0930
+127.0.0.1 - - [01/Oct/2010 14:35:11] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0160
+127.0.0.1 - - [01/Oct/2010 14:35:11] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0160
+127.0.0.1 - - [01/Oct/2010 14:35:12] "GET / HTTP/1.1" 200 1219 0.0310
+127.0.0.1 - - [01/Oct/2010 14:35:12] "GET /css/style.css HTTP/1.1" 200 863 0.0930
+127.0.0.1 - - [01/Oct/2010 14:35:14] "GET /ao/show/1 HTTP/1.1" 200 822 0.0310
+127.0.0.1 - - [01/Oct/2010 14:35:14] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0000
+127.0.0.1 - - [01/Oct/2010 14:35:14] "GET /css/style.css HTTP/1.1" 200 863 0.1090
+127.0.0.1 - - [01/Oct/2010 14:35:14] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:35:14] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /ao/show/1 HTTP/1.1" 200 822 0.0320
+127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0150
+127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /css/style.css HTTP/1.1" 200 863 0.0940
+127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0150
+127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000

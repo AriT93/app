@@ -1,0 +1,9 @@
+%p
+  - #{ao.name}
+%ul
+  %li #{@ao.value}
+  %li #{@ao.numeral}
+
+
+%a{:href => "/ao/edit/#{@ao.id}"} Edit |
+%a{:href => "/"} Home

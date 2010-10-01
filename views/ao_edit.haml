@@ -1,0 +1,10 @@
+%form{:id => "aobject", :method => "POST", :action => "/ao/edit/#{@ao.id}"}
+  %label{:for => "name"} Name:
+  %input{:id => "name", :name => "name", :type => "text", :value => "#{@ao.name}"}
+  %label{:for => "value"} Value:
+  %input{:id => "value", :name => "value", :type => "text", :value => "#{@ao.value}"}
+  %label{:for => "numeral"} Numeral:
+  %input{:id => "numeral", :name => "numeral", :type => "text", :value => "#{@ao.numeral}"}
+  %input{:id => "id", :name => "id", :type => "hidden", :value => "#{@ao.id}"}
+  %input{:name => "_method", :value => "put", :type => "hidden"}
+  %input{:type => "submit", :name => "submit", :value => "submit"}
