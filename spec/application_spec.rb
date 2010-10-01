@@ -4,7 +4,7 @@ describe 'main application' do
   include Rack::Test::Methods
 
   def app
-    Sinatra::Application.new
+    App.new
   end
 
   specify 'should show the default index page' do

@@ -1,0 +1,12 @@
+This app is just where I am trying to put together everything I'm learning about
+sinatra and ruby into a choherent format.
+
+Currently I have integrated Sinatra RSpec Cucumber and DataMapper  I also have a
+start on a rake file.
+
+I have used DataMapper Migrations to provide for a rails-like migration setup
+
+I have started on some rudimentary cucumber and Rspec tests.  I will continue on
+with these as I come up with things for the "App" app to do.
+
+input is welcome if you have stumbled across this project

@@ -1,7 +1,7 @@
 require 'spec/rake/spectask'
 
 task :default => :test
-task :test => :spec
+task :test => [:spec, :cucumber]
 
 if !defined?(Spec)
   puts "spec targets require RSpec"
@@ -36,4 +36,12 @@ end
 
 task :environment do
   require 'environment'
+end
+
+task :cucumber do
+  require 'environment'
+  require 'cucumber/rake/task'
+  Cucumber::Rake::Task.new do |t|
+    t.cucumber_opts = %w{--format pretty}
+  end
 end

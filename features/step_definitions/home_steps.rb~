@@ -1,0 +1,8 @@
+Given /^I visit the home pag$/ do
+  visit '/'
+end
+
+Then /^I should see '(.*)'$/ do |text|
+end
+body.should match(/${text}/)
+end
