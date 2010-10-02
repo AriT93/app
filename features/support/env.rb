@@ -3,6 +3,8 @@
 ENV['RACK_ENV'] = 'test'
 
 require File.join(File.dirname(__FILE__), '..', '..', './app.rb')
+require File.join(File.dirname(__FILE__), %w{.. .. spec spec_helper})
+require File.join(File.dirname(__FILE__), %w{.. .. environment})
 
 require 'capybara'
 require 'capybara/cucumber'
@@ -14,8 +16,10 @@ class AppWorld
   include Capybara
   include Spec::Expectations
   include Spec::Matchers
+  include Rack::Test::Methods
 end
 
 World do
+  DataMapper.auto_migrate!
   AppWorld.new
 end

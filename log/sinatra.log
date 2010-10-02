@@ -1961,3 +1961,374 @@ TypeError: can't convert Fixnum into String
 127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /css/style.css HTTP/1.1" 200 863 0.0940
 127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0150
 127.0.0.1 - - [01/Oct/2010 14:50:44] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0000
+192.168.1.251 - - [01/Oct/2010 16:00:58] "GET / HTTP/1.1" 200 1182 0.0125
+192.168.1.251 - - [01/Oct/2010 16:00:58] "GET /js/application.js HTTP/1.1" 200 122 0.0148
+192.168.1.251 - - [01/Oct/2010 16:00:58] "GET /js/jquery.js HTTP/1.1" 200 163629 0.0013
+192.168.1.251 - - [01/Oct/2010 16:00:58] "GET /css/style.css HTTP/1.1" 200 863 0.0582
+192.168.1.251 - - [01/Oct/2010 16:00:58] "GET /favicon.ico HTTP/1.1" 404 420 0.0018
+192.168.1.251 - - [01/Oct/2010 16:02:47] "GET /ao/create HTTP/1.1" 200 1102 0.0260
+192.168.1.251 - - [01/Oct/2010 16:02:47] "GET /ao/js/application.js HTTP/1.1" 404 429 0.0021
+192.168.1.251 - - [01/Oct/2010 16:02:47] "GET /ao/js/jquery.js HTTP/1.1" 404 424 0.0013
+192.168.1.251 - - [01/Oct/2010 16:02:47] "GET /css/style.css HTTP/1.1" 200 863 0.0244
+192.168.1.251 - - [01/Oct/2010 16:02:53] "GET /ao/create HTTP/1.1" 200 1102 0.0061
+192.168.1.251 - - [01/Oct/2010 16:02:53] "GET /ao/js/jquery.js HTTP/1.1" 404 424 0.0015
+192.168.1.251 - - [01/Oct/2010 16:02:53] "GET /ao/js/application.js HTTP/1.1" 404 429 0.0504
+192.168.1.251 - - [01/Oct/2010 16:02:53] "GET /css/style.css HTTP/1.1" 200 863 0.0676
+NoMethodError - undefined method `value' for nil:NilClass:
+ ./views/ao_show.haml:4:in `__tilt_274af6e909d4394e440e41301700f0cb'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `send'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `evaluate'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+ ./app.rb:58:in `GET /ao/show/:id'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+NoMethodError: undefined method `value' for nil:NilClass
+	./views/ao_show.haml:4:in `__tilt_274af6e909d4394e440e41301700f0cb'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `send'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `evaluate'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+	./app.rb:58:in `GET /ao/show/:id'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+192.168.1.251 - - [01/Oct/2010 16:03:00] "GET /ao/show/1 HTTP/1.1" 500 146009 0.1024
+192.168.1.251 - - [01/Oct/2010 16:03:00] "GET /__sinatra__/500.png HTTP/1.1" 200 31056 0.0026
+192.168.1.251 - - [01/Oct/2010 16:03:38] "GET / HTTP/1.1" 200 1182 0.0066
+192.168.1.251 - - [01/Oct/2010 16:03:38] "GET /css/style.css HTTP/1.1" 200 863 0.0744
+192.168.1.251 - - [01/Oct/2010 16:03:40] "GET / HTTP/1.1" 200 1182 0.0060
+192.168.1.251 - - [01/Oct/2010 16:03:40] "GET /js/application.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 16:03:40] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 16:03:40] "GET /css/style.css HTTP/1.1" 200 863 0.0270
+192.168.1.251 - - [01/Oct/2010 16:03:40] "GET /favicon.ico HTTP/1.1" 404 420 0.0017
+192.168.1.251 - - [01/Oct/2010 16:03:52] "GET /ao/create HTTP/1.1" 200 1102 0.0068
+192.168.1.251 - - [01/Oct/2010 16:03:52] "GET /ao/js/application.js HTTP/1.1" 404 429 0.0014
+192.168.1.251 - - [01/Oct/2010 16:03:52] "GET /ao/js/jquery.js HTTP/1.1" 404 424 0.0014
+192.168.1.251 - - [01/Oct/2010 16:03:52] "GET /css/style.css HTTP/1.1" 200 863 0.0238
+192.168.1.251 - - [01/Oct/2010 16:03:58] "POST /ao/create HTTP/1.1" 302 - 0.0068
+192.168.1.251 - - [01/Oct/2010 16:03:58] "GET /ao/show/1 HTTP/1.1" 200 899 0.0078
+192.168.1.251 - - [01/Oct/2010 16:03:58] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0012
+192.168.1.251 - - [01/Oct/2010 16:03:58] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0028
+192.168.1.251 - - [01/Oct/2010 16:03:58] "GET /css/style.css HTTP/1.1" 200 863 0.0251
+192.168.1.251 - - [01/Oct/2010 16:04:01] "GET / HTTP/1.1" 200 1219 0.0065
+192.168.1.251 - - [01/Oct/2010 16:04:01] "GET /css/style.css HTTP/1.1" 200 863 0.0717
+192.168.1.251 - - [01/Oct/2010 21:11:07] "GET /ao/show/1 HTTP/1.1" 200 822 0.0510
+192.168.1.251 - - [01/Oct/2010 21:11:07] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0013
+192.168.1.251 - - [01/Oct/2010 21:11:07] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0014
+192.168.1.251 - - [01/Oct/2010 21:11:07] "GET /css/style.css HTTP/1.1" 200 863 0.0264
+192.168.1.251 - - [01/Oct/2010 21:11:09] "GET / HTTP/1.1" 200 1143 0.0069
+192.168.1.251 - - [01/Oct/2010 21:11:09] "GET /js/application.js HTTP/1.1" 304 - 0.0014
+192.168.1.251 - - [01/Oct/2010 21:11:09] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:11:09] "GET /css/style.css HTTP/1.1" 200 863 0.0631
+192.168.1.251 - - [01/Oct/2010 21:11:10] "GET /ao/show/1 HTTP/1.1" 200 822 0.0079
+192.168.1.251 - - [01/Oct/2010 21:11:10] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0021
+192.168.1.251 - - [01/Oct/2010 21:11:10] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0015
+192.168.1.251 - - [01/Oct/2010 21:11:11] "GET /css/style.css HTTP/1.1" 200 863 0.0245
+192.168.1.251 - - [01/Oct/2010 21:11:12] "GET /ao/edit/1 HTTP/1.1" 200 1261 0.0103
+192.168.1.251 - - [01/Oct/2010 21:11:12] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0019
+192.168.1.251 - - [01/Oct/2010 21:11:12] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0013
+192.168.1.251 - - [01/Oct/2010 21:11:12] "GET /css/style.css HTTP/1.1" 200 863 0.0267
+192.168.1.251 - - [01/Oct/2010 21:11:18] "PUT /ao/edit/1 HTTP/1.1" 302 - 0.0074
+192.168.1.251 - - [01/Oct/2010 21:11:18] "GET /ao/show/1 HTTP/1.1" 200 903 0.0078
+192.168.1.251 - - [01/Oct/2010 21:11:18] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0022
+192.168.1.251 - - [01/Oct/2010 21:11:18] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0017
+192.168.1.251 - - [01/Oct/2010 21:11:18] "GET /css/style.css HTTP/1.1" 200 863 0.0247
+192.168.1.251 - - [01/Oct/2010 21:11:31] "GET /ao/show/1 HTTP/1.1" 200 822 0.0572
+192.168.1.251 - - [01/Oct/2010 21:11:31] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0015
+192.168.1.251 - - [01/Oct/2010 21:11:31] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0014
+192.168.1.251 - - [01/Oct/2010 21:11:31] "GET /css/style.css HTTP/1.1" 200 863 0.0287
+192.168.1.251 - - [01/Oct/2010 21:11:31] "GET /favicon.ico HTTP/1.1" 404 420 0.0015
+192.168.1.251 - - [01/Oct/2010 21:11:47] "GET /ao/edit/1 HTTP/1.1" 200 1261 0.0099
+192.168.1.251 - - [01/Oct/2010 21:11:47] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0015
+192.168.1.251 - - [01/Oct/2010 21:11:47] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0014
+192.168.1.251 - - [01/Oct/2010 21:11:47] "GET /css/style.css HTTP/1.1" 200 863 0.0264
+192.168.1.251 - - [01/Oct/2010 21:11:55] "PUT /ao/edit/1 HTTP/1.1" 302 - 0.0070
+192.168.1.251 - - [01/Oct/2010 21:11:55] "GET /ao/show/1 HTTP/1.1" 200 905 0.0080
+192.168.1.251 - - [01/Oct/2010 21:11:55] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0016
+192.168.1.251 - - [01/Oct/2010 21:11:55] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0016
+192.168.1.251 - - [01/Oct/2010 21:11:55] "GET /css/style.css HTTP/1.1" 200 863 0.0222
+192.168.1.251 - - [01/Oct/2010 21:12:51] "GET / HTTP/1.1" 200 1219 0.0125
+192.168.1.251 - - [01/Oct/2010 21:12:51] "GET /css/style.css HTTP/1.1" 200 863 0.0217
+192.168.1.251 - - [01/Oct/2010 21:12:58] "GET /ao/show/1 HTTP/1.1" 200 824 0.0068
+192.168.1.251 - - [01/Oct/2010 21:12:58] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0019
+192.168.1.251 - - [01/Oct/2010 21:12:58] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0015
+192.168.1.251 - - [01/Oct/2010 21:12:58] "GET /css/style.css HTTP/1.1" 200 863 0.0667
+192.168.1.251 - - [01/Oct/2010 21:13:00] "GET /ao/edit/1 HTTP/1.1" 200 1263 0.0090
+192.168.1.251 - - [01/Oct/2010 21:13:00] "GET /ao/edit/js/application.js HTTP/1.1" 404 434 0.0018
+192.168.1.251 - - [01/Oct/2010 21:13:00] "GET /ao/edit/js/jquery.js HTTP/1.1" 404 429 0.0017
+192.168.1.251 - - [01/Oct/2010 21:13:00] "GET /css/style.css HTTP/1.1" 200 863 0.0255
+192.168.1.251 - - [01/Oct/2010 21:13:06] "PUT /ao/edit/1 HTTP/1.1" 302 - 0.0066
+192.168.1.251 - - [01/Oct/2010 21:13:06] "GET /ao/show/1 HTTP/1.1" 200 905 0.0071
+192.168.1.251 - - [01/Oct/2010 21:13:06] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0017
+192.168.1.251 - - [01/Oct/2010 21:13:06] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0017
+192.168.1.251 - - [01/Oct/2010 21:13:06] "GET /css/style.css HTTP/1.1" 200 863 0.0227
+192.168.1.251 - - [01/Oct/2010 21:13:33] "GET /ao/show/js/jquery.js HTTP/1.1" 404 429 0.0017
+192.168.1.251 - - [01/Oct/2010 21:13:39] "GET /ao/show/js/application.js HTTP/1.1" 404 434 0.0014
+192.168.1.251 - - [01/Oct/2010 21:15:51] "GET /js/application.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:16:40] "GET /ao/show/1 HTTP/1.1" 200 826 0.0073
+192.168.1.251 - - [01/Oct/2010 21:16:45] "GET /ao/edit/1 HTTP/1.1" 200 1265 0.0088
+192.168.1.251 - - [01/Oct/2010 21:16:45] "GET /css/style.css HTTP/1.1" 200 863 0.0809
+192.168.1.251 - - [01/Oct/2010 21:16:52] "PUT /ao/edit/1 HTTP/1.1" 302 - 0.0062
+192.168.1.251 - - [01/Oct/2010 21:16:52] "GET /ao/show/1 HTTP/1.1" 200 908 0.0080
+192.168.1.251 - - [01/Oct/2010 21:16:52] "GET /js/application.js HTTP/1.1" 304 - 0.0022
+192.168.1.251 - - [01/Oct/2010 21:16:52] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:16:52] "GET /css/style.css HTTP/1.1" 200 863 0.0218
+192.168.1.251 - - [01/Oct/2010 21:17:29] "GET / HTTP/1.1" 200 1221 0.0075
+192.168.1.251 - - [01/Oct/2010 21:17:29] "GET /css/style.css HTTP/1.1" 200 863 0.0221
+192.168.1.251 - - [01/Oct/2010 21:17:54] "GET / HTTP/1.1" 200 1145 0.0125
+192.168.1.251 - - [01/Oct/2010 21:17:54] "GET /js/jquery.js HTTP/1.1" 304 - 0.0023
+192.168.1.251 - - [01/Oct/2010 21:17:54] "GET /js/application.js HTTP/1.1" 304 - 0.0010
+192.168.1.251 - - [01/Oct/2010 21:17:54] "GET /css/style.css HTTP/1.1" 200 863 0.0244
+192.168.1.251 - - [01/Oct/2010 21:17:54] "GET /favicon.ico HTTP/1.1" 404 420 0.0015
+192.168.1.251 - - [01/Oct/2010 21:17:57] "GET / HTTP/1.1" 200 1145 0.0076
+192.168.1.251 - - [01/Oct/2010 21:17:57] "GET /js/application.js HTTP/1.1" 304 - 0.0013
+192.168.1.251 - - [01/Oct/2010 21:17:57] "GET /js/jquery.js HTTP/1.1" 304 - 0.0422
+192.168.1.251 - - [01/Oct/2010 21:17:57] "GET /css/style.css HTTP/1.1" 200 863 0.0229
+192.168.1.251 - - [01/Oct/2010 21:17:57] "GET /favicon.ico HTTP/1.1" 404 420 0.0014
+192.168.1.251 - - [01/Oct/2010 21:17:58] "GET / HTTP/1.1" 200 1145 0.0069
+192.168.1.251 - - [01/Oct/2010 21:17:58] "GET /js/application.js HTTP/1.1" 304 - 0.0016
+192.168.1.251 - - [01/Oct/2010 21:17:58] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:17:58] "GET /css/style.css HTTP/1.1" 200 863 0.0238
+192.168.1.251 - - [01/Oct/2010 21:17:58] "GET /favicon.ico HTTP/1.1" 404 420 0.0017
+192.168.1.251 - - [01/Oct/2010 21:18:01] "GET / HTTP/1.1" 200 1145 0.0066
+192.168.1.251 - - [01/Oct/2010 21:18:01] "GET /js/jquery.js HTTP/1.1" 304 - 0.0016
+192.168.1.251 - - [01/Oct/2010 21:18:01] "GET /js/application.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:18:01] "GET /css/style.css HTTP/1.1" 200 863 0.0224
+192.168.1.251 - - [01/Oct/2010 21:18:01] "GET /favicon.ico HTTP/1.1" 404 420 0.0014
+192.168.1.251 - - [01/Oct/2010 21:18:22] "GET / HTTP/1.1" 200 1145 0.0064
+192.168.1.251 - - [01/Oct/2010 21:18:22] "GET /js/jquery.js HTTP/1.1" 304 - 0.0019
+192.168.1.251 - - [01/Oct/2010 21:18:22] "GET /js/application.js HTTP/1.1" 304 - 0.0013
+192.168.1.251 - - [01/Oct/2010 21:18:22] "GET /css/style.css HTTP/1.1" 200 863 0.0727
+192.168.1.251 - - [01/Oct/2010 21:18:22] "GET /favicon.ico HTTP/1.1" 404 420 0.0016
+192.168.1.251 - - [01/Oct/2010 21:18:24] "GET /ao/show/1 HTTP/1.1" 200 827 0.0078
+192.168.1.251 - - [01/Oct/2010 21:18:24] "GET /css/style.css HTTP/1.1" 200 863 0.0220
+192.168.1.251 - - [01/Oct/2010 21:18:26] "GET /ao/edit/1 HTTP/1.1" 200 1266 0.0086
+192.168.1.251 - - [01/Oct/2010 21:18:26] "GET /css/style.css HTTP/1.1" 200 863 0.0220
+192.168.1.251 - - [01/Oct/2010 21:18:33] "PUT /ao/edit/1 HTTP/1.1" 302 - 0.0071
+192.168.1.251 - - [01/Oct/2010 21:18:33] "GET /ao/show/1 HTTP/1.1" 200 908 0.0072
+192.168.1.251 - - [01/Oct/2010 21:18:33] "GET /js/application.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:18:33] "GET /css/style.css HTTP/1.1" 200 863 0.0243
+192.168.1.251 - - [01/Oct/2010 21:18:33] "GET /js/jquery.js HTTP/1.1" 304 - 0.0010
+NameError - undefined local variable or method `ao' for #<App:0x101dc1458>:
+ ./views/ao_show.haml:2:in `__tilt_c2372857c8b77d1145b288c5895d119d'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `send'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `evaluate'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+ ./app.rb:58:in `GET /ao/show/:id'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+ /Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+ /Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+ /Library/Ruby/Gems/1.8/gems/rack-1.2.1/bin/rackup:4
+ /usr/bin/rackup:19:in `load'
+ /usr/bin/rackup:19
+NameError: undefined local variable or method `ao' for #<App:0x101dc1458>
+	./views/ao_show.haml:2:in `__tilt_c2372857c8b77d1145b288c5895d119d'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `send'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:195:in `evaluate'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:449:in `evaluate'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/tilt.rb:131:in `render'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:343:in `render'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:311:in `haml'
+	./app.rb:58:in `GET /ao/show/:id'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `call'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:863:in `route'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `instance_eval'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:521:in `route_eval'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:500:in `route!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `catch'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:497:in `route!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `each'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:476:in `route!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:601:in `dispatch!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `instance_eval'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `catch'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:566:in `invoke'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:411:in `call!'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:399:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-flash-0.1.1/lib/rack/flash.rb:148:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/session/cookie.rb:37:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:1005:in `synchronize'
+	/Library/Ruby/Gems/1.8/gems/sinatra-1.0/lib/sinatra/base.rb:979:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:48:in `_call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/lint.rb:36:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/showexceptions.rb:24:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/commonlogger.rb:18:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/chunked.rb:15:in `call'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:67:in `process'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+	/Library/Ruby/Gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/handler/mongrel.rb:38:in `run'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/lib/rack/server.rb:100:in `start'
+	/Library/Ruby/Gems/1.8/gems/rack-1.2.1/bin/rackup:4
+	/usr/bin/rackup:19:in `load'
+	/usr/bin/rackup:19
+192.168.1.251 - - [01/Oct/2010 21:19:33] "GET /ao/show/1 HTTP/1.1" 500 146472 0.1283
+192.168.1.251 - - [01/Oct/2010 21:19:33] "GET /__sinatra__/500.png HTTP/1.1" 304 - 0.0284
+192.168.1.251 - - [01/Oct/2010 21:19:33] "GET /favicon.ico HTTP/1.1" 404 420 0.0014
+192.168.1.251 - - [01/Oct/2010 21:19:42] "GET /ao/show/1 HTTP/1.1" 200 842 0.0077
+192.168.1.251 - - [01/Oct/2010 21:19:42] "GET /js/jquery.js HTTP/1.1" 304 - 0.0025
+192.168.1.251 - - [01/Oct/2010 21:19:42] "GET /js/application.js HTTP/1.1" 304 - 0.0013
+192.168.1.251 - - [01/Oct/2010 21:19:42] "GET /css/style.css HTTP/1.1" 200 863 0.0231
+192.168.1.251 - - [01/Oct/2010 21:19:42] "GET /favicon.ico HTTP/1.1" 404 420 0.0016
+192.168.1.251 - - [01/Oct/2010 21:19:48] "GET / HTTP/1.1" 200 1146 0.0084
+192.168.1.251 - - [01/Oct/2010 21:19:48] "GET /css/style.css HTTP/1.1" 200 863 0.0232
+192.168.1.251 - - [01/Oct/2010 21:49:51] "GET /ao/create HTTP/1.1" 200 1104 0.0741
+192.168.1.251 - - [01/Oct/2010 21:49:51] "GET /css/style.css HTTP/1.1" 200 863 0.0215
+192.168.1.251 - - [01/Oct/2010 21:49:59] "POST /ao/create HTTP/1.1" 302 - 0.0229
+192.168.1.251 - - [01/Oct/2010 21:49:59] "GET /ao/show/2 HTTP/1.1" 200 914 0.0073
+192.168.1.251 - - [01/Oct/2010 21:49:59] "GET /js/application.js HTTP/1.1" 304 - 0.0010
+192.168.1.251 - - [01/Oct/2010 21:49:59] "GET /js/jquery.js HTTP/1.1" 304 - 0.0011
+192.168.1.251 - - [01/Oct/2010 21:49:59] "GET /css/style.css HTTP/1.1" 200 863 0.0254

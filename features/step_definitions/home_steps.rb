@@ -3,5 +3,5 @@ Given /^I visit the home page$/ do
 end
 
 Then /^I should see '(.*)'$/ do |text|
-  body.should match(/#{text}/m)
+  body.should match(/.*#{text}/m)
 end

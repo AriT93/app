@@ -44,7 +44,7 @@ class App < Sinatra::Base
 
 
   get '/' do
-    flash[:notice] = "Welcome! Friend"
+#    flash[:notice] = "Welcome! Friend"
     haml :index
   end
 
